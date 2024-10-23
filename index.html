@@ -3,9 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- Header Section -->
+    <header class="section-box">
+        <nav class="navbar">
+            <div class="header-left">
+                <!-- Mini logo on the left side -->
+                <img src="images/Revou-logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="header-right">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Our Profile</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#message">Message Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section id="home" class="banner section-box">
+        <h1 id="welcome-message">Hi, Welcome to the Website</h1>
+        <p>Ini adalah website latihan kesekian</p>
+        <!-- Updated to include the banner image -->
+        <img src="images/banner.jpg" alt="Main Banner" class="photo-banner">
+    </section>
     
+    <!-- Our Profile Section -->
+    <section id="profile" class="section-box">
+        <h2>About the Company</h2>
+        <p>At here, we are more than just a web development consulting firm, we are your strategic partner in navigating the digital landscape. Our commitment to innovation, excellence, and customer satisfaction drives us to deliver tailored solutions that empower businesses to succeed online. As we continue to grow and adapt to the changing technological landscape, we remain dedicated to understanding your unique needs and providing exceptional service. Together, we can turn your vision into reality and elevate your online presence to new heights.</p>
+        <p>Vision: To be the best service provider in the world.</p>
+        <p>Mission: Deliver high-quality products and services.</p>
+    </section>
+
+    <!-- Our Headquarters Section -->
+    <section id="headquarters" class="section-box">
+        <h2>Our Headquarters</h2>
+        <div class="locations">
+            <div class="location">
+                <p>Jakarta</p>
+                <!-- Updated to include Jakarta HQ image -->
+                <img src="images/jakarta.jpg" alt="Jakarta HQ" class="square">
+            </div>
+            <div class="location">
+                <p>Bandung</p>
+                <!-- Updated to include Bandung HQ image -->
+                <img src="images/bandung.jpg" alt="Bandung HQ" class="square">
+            </div>
+            <div class="location">
+                <p>Surabaya</p>
+                <!-- Updated to include Surabaya HQ image -->
+                <img src="images/surabaya.png" alt="Surabaya HQ" class="square">
+            </div>
+        </div>
+    </section>
+    
+<!-- Message Us Form Section -->
+<section class="section-box">
+    <h2>Message Us</h2>
+    <div class="form-container">
+    <form id="message-form">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+        <div class="submitted-box" id="submitted-box" style="display:none;">
+            <h2>Submitted Form</h2>
+            <p id="submitted-name"></p>
+            <p id="submitted-email"></p>
+            <p id="submitted-phone"></p>
+            <p id="submitted-message"></p>
+        </div>
+    </div>
+</section>
+    <!-- Footer Section -->
+    <footer class="section-box">
+        <p>Created by Azhar</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

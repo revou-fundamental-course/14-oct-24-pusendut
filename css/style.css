@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 70px; /* Adjust padding to prevent content from hiding under the header */
+}
+
+.section-box {
+    border: 2px solid #000;
+    padding: 20px;
+    max-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0; /* Remove margin to eliminate gaps between sections */
+}
+
+.section-box:not(:last-child) {
+    margin-bottom: 0; /* Ensure no margin at the bottom of each section */
+}
+
+/* Sticky Header */
+header {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: #FFFF00; /* Keep the same background color */
+    z-index: 1000; /* Make sure it stays above other elements */
+    padding: 10px 20px; /* Add some padding */
+    height: auto; /* Allow the height to be flexible */
+}
+
+/* Align the navbar items to the right */
+.header-right {
+    text-align: right;
+    height: 100%; /* Ensure it occupies full height */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mini logo style */
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+/* Navbar */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Main Banner Section */
+.banner {
+    display: flex;
+    justify-content: flex-start; /* Align to the left */
+    align-items: flex-start; /* Align items to the top */
+    flex-direction: column; /* Stack items vertically */
+    padding-left: 20px; /* Add some left padding */
+    padding-top: calc(10vh + 20px); /* Set dynamic padding to ensure text is visible below the header */
+}
+
+/* Style adjustments for welcome message */
+#welcome-message {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+    color: #000; /* Ensure text color is visible */
+}
+
+/* Optional: If you want to adjust the paragraph below */
+.banner p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.photo-banner {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Our Profile Section */
+#profile {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Our Headquarters Section */
+.locations {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.square {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Message Us Form Section */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; /* Space between the form and the submitted data */
+    margin: 20px 0; /* Margin around the form container */
+}
+
+/* Form styles */
+#message-form {
+    flex: 1; /* Allow the form to grow */
+    max-width: 90%; /* Set a maximum width for the form */
+    padding: 20px;
+}
+
+/* Submitted Data Box */
+.submitted-box {
+    flex: 1; /* Allow the submitted box to grow */
+    max-width: 90%; /* Set a maximum width for the submitted data box */
+    padding: 20px;
+    background-color: #cacdcf;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-height: 200px; /* Minimum height to make the box visible before content is submitted */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+    align-items: center; /* Center the text horizontally */
+    text-align: center; /* Text alignment */
+}
+
+/* Center text in the submitted box */
+.submitted-box h2,
+.submitted-box p {
+    margin: 5px 0; /* Add some margin between elements */
+}
+
+/* General styles for both form and box */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        padding-top: calc(15vh + 10px); /* Increase padding for mobile if needed */
+    }
+
+    #welcome-message {
+        font-size: 1.5em; /* Smaller font size for mobile */
+    }
+
+    .banner p {
+        font-size: 1em; /* Smaller paragraph font for mobile */
+    }
+}
+
+/* Footer Section */
+footer {
+    text-align: right;
+    padding: 10px;
+    background-color: #FFFF00;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .locations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-right {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
